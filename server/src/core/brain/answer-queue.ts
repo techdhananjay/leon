@@ -7,6 +7,8 @@ import { LogHelper } from '@/helpers/log-helper'
  * more time to be processed. For instance, the LLM NLG model can take a few seconds to generate a text.
  * So, we need to wait for the previous answer to be processed before sending the next one.
  */
+
+
 export class AnswerQueue<T> {
   public answers: T[]
   public isProcessing: boolean
@@ -25,9 +27,7 @@ export class AnswerQueue<T> {
   public pop(): T | undefined {
     const nextAnswer = this.answers.shift()
     LogHelper.title('Answer Queue')
-    LogHelper.info(
-      `Answer popped from the queue: ${JSON.stringify(nextAnswer)}`
-    )
+    LogHelper.info(  `Answer popped from the queue: ${JSON.stringify(nextAnswer)}` )
     return nextAnswer
   }
 
@@ -40,4 +40,9 @@ export class AnswerQueue<T> {
   public isEmpty(): boolean {
     return this.answers.length === 0
   }
+
+
+
 }
+
+

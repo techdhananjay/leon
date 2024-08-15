@@ -1,0 +1,17 @@
+{
+    "name": "story_answering",
+    "description": "A skill to answer questions based on the provided story",
+    "version": "1.0.0",
+    "inputs": {
+        "question": {
+            "type": "string",
+            "description": "The question about the story"
+        }
+    },
+    "outputs": {
+        "answer": {
+            "type": "string",
+            "description": "The answer to the question"
+        }
+    }
+}

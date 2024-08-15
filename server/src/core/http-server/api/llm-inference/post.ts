@@ -25,14 +25,8 @@ const LLM_DUTIES_MAP = {
   [LLMDuties.Conversation]: ConversationLLMDuty,
   [LLMDuties.Custom]: CustomLLMDuty
 }
-
-export const postLLMInference: FastifyPluginAsync<APIOptions> = async (
-  fastify,
-  options
-) => {
-  fastify.route<{
-    Body: PostLLMInferenceSchema['body']
-  }>({
+export const postLLMInference: FastifyPluginAsync<APIOptions> = async (fastify, options) => {
+  fastify.route<{ Body: PostLLMInferenceSchema['body'] }>({
     method: 'POST',
     url: `/api/${options.apiVersion}/llm-inference`,
     handler: async (request, reply) => {

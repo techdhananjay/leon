@@ -16,10 +16,7 @@ import { LogHelper } from '@/helpers/log-helper'
 import { DateHelper } from '@/helpers/date-helper'
 import { SystemHelper } from '@/helpers/system-helper'
 
-export const getInfo: FastifyPluginAsync<APIOptions> = async (
-  fastify,
-  options
-) => {
+export const getInfo: FastifyPluginAsync<APIOptions> = async (fastify, options) => {
   fastify.route({
     method: 'GET',
     url: `/api/${options.apiVersion}/info`,

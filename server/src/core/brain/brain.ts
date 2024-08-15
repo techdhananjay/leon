@@ -716,7 +716,7 @@ export default class Brain {
                 // @ts-expect-error
                 answer =
                   unknownAnswers[
-                    Math.floor(Math.random() * unknownAnswers.length)
+                  Math.floor(Math.random() * unknownAnswers.length)
                   ]
               }
             }
@@ -779,7 +779,7 @@ export default class Brain {
                       answer = StringHelper.findAndMap(answer as string, {
                         [match]:
                           valuesArr[
-                            Math.floor(Math.random() * valuesArr.length)
+                          Math.floor(Math.random() * valuesArr.length)
                           ]
                       })
                     }
@@ -816,3 +816,5 @@ export default class Brain {
     })
   }
 }
+
+

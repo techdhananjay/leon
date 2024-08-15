@@ -1,0 +1,51 @@
+{
+    "intents": {
+      "story.summary": {
+        "training": [
+          "What is the story about?",
+          "Give me a summary of the story",
+          "Tell me the plot",
+          "What happens in the story?"
+        ],
+        "answers": [
+          "The story is about Paul Hasleman, a young boy who increasingly retreats into a fantasy world where he imagines snow falling silently and secretly. This fantasy gradually takes over his life, isolating him from reality and worrying his parents."
+        ]
+      },
+      "story.character": {
+        "training": [
+          "Who is the main character?",
+          "Who is the protagonist?",
+          "Who is Paul?",
+          "Tell me about the main character"
+        ],
+        "answers": [
+          "The main character is Paul Hasleman, a 12-year-old boy who becomes increasingly obsessed with his imagined world of secret snow."
+        ]
+      },
+      "story.ending": {
+        "training": [
+          "What happens at the end?",
+          "How does the story conclude?",
+          "Tell me the ending",
+          "What is the conclusion of the story?"
+        ],
+        "answers": [
+          "In the end, Paul succumbs to his hallucination of snow, shutting out reality completely and retreating fully into his fantasy world."
+        ]
+      },
+      "story.snow": {
+        "training": [
+          "What is the secret snow?",
+          "Tell me about the snow",
+          "What does the snow represent?",
+          "Explain the snow in the story"
+        ],
+        "answers": [
+          "The secret snow represents Paul’s retreat into a comforting but isolating fantasy that distances him from reality and everyone around him."
+        ]
+      }
+    }
+  }
+  
+
+  
